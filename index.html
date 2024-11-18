@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royalty Glow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<style>
+  body{
+    background: rgba(218, 134, 32, 0.674);
+  }
+  .banner{
+    position: relative;
+  }
+  .banner img{
+    width: 100%;
+    height: 95vh;
+  }
+    h1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 50px;
+        animation: jump 5s linear infinite reverse;
+        color: goldenrod;
+    }
+    nav{
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-style: italic;
+        background: black;
+        opacity: 0.5;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    aside{
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        font-size: 30px;
+        font-style: italic;
+        background: black;
+        opacity: 0.5;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+    }
+      h2{
+        position: absolute;
+        top: 70px;
+        text-align: center;
+        font-size: 30px;
+        font-style: italic;
+        font-family: 'Courier New', Courier;
+        color: white;
+        animation: drive 10s linear infinite reverse;
+    }
+    h3{
+      color: goldenrod;
+      font-size: 35px;
+    }
+    ul li a{
+      color: goldenrod;
+    }
+    ul li{
+      color: goldenrod;
+    }
+    input{
+      background: wheat;
+      border-radius: 7px;
+      width: 35%;
+
+    }
+    input:hover{
+      background: goldenrod;
+      cursor: pointer;
+    }
+    p{
+      font-size: 20px;
+    }
+    @keyframes drive{
+      from{ transform: translateX (-100px)}
+      to{ transform: translateX(1000px)}
+      25%{color: goldenrod;}
+      50%{color: aqua;}
+      75%{color: yellow;}
+      100%{color: gold;}
+  }
+  @keyframes jump {
+    0%{top: -20px;}
+    10%{color: aqua;}
+    20%{color: goldenrod;}
+    30%{color: white;}
+}
+@media screen and (max-width: 800px){
+  nav{
+    left: 3%;
+    top: 40%;
+    font-size: 30px;
+    padding: 20px;
+  }
+  aside{
+    position: absolute;
+    top: 33%;
+    left: 55%;
+    max-width: 30%;
+    max-height: 50%;
+}
+h3{
+  font-size: 20px;
+}
+}
+@media screen and (max-width: 600px){
+  .banner img{
+    width: 100%;
+    height: 50vh;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    top: 10%;
+    left: 0;
+    right: 0;
+    color: goldenrod;
+    font-size: 15px;
+    position: absolute;
+    top: 70px;
+    font-size: 20px;
+    animation: drive 8s linear infinite reverse;
+  }
+  @keyframes drive{
+    from{ transform: translateX (-0px)}
+    to{ transform: translateX(30px)}
+    25%{color: goldenrod;}
+    50%{color: aqua;}
+    75%{color: yellow;}
+    100%{color: gold;}
+}
+  nav{
+    position: absolute;
+    left: 5%;
+    top: 43%;
+    max-width: 40%;
+    font-size: 30px;
+    padding: 0;
+  }
+  nav li{
+   color: goldenrod;
+   display: block;
+   justify-items: left;
+   font-size: 20px;
+  }
+  nav li a{
+    color: goldenrod;
+    list-style-type: circle;
+  }
+  aside{
+    padding: 0;
+    max-width: 50%;
+  }
+  }
+  @media screen and (max-width: 500px){
+    h2{
+      top: 10%;
+    }
+    @keyframes jump {
+      0%{top: -20px;}
+      10%{color: aqua;}
+      20%{color: goldenrod;}
+      30%{color: white;}
+    }
+  }
+  .container2{
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .container2 img{
+    width: 15%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid goldenrod;
+    transition: all ease-in-out 0.5s;
+  }
+  .container2 img:hover{
+    width: 50%;
+  }
+</style>
+<body>
+  <section class="banner">
+    <img src="./dark hotel.jpg" alt="background">
+          <h1>Royalty Glow Hotel</h1><br>
+          <h2>Welcome to royalty glow hotel</h2>
+            <nav>
+                <ul>
+                    <li><div><a href="">Home</a></div></li>
+                    <li><div><a href="">Our Services</a></div></li>
+                    <li><div><a href="">Book a room</a></div></li>
+                    <li><div><a href="">Customer Support</a></div></li>
+                    <li><div><a href="">FAQs</a></div></li>
+                  </h3>
+          </ul>
+            </nav>
+          <aside>
+            <form>
+                <h3>
+                  <label for="username">Enter username:</label>
+                  <input type="text" id="userename" placeholder="username..." required><br><br>
+                  <label for="password">Enter password:</label>
+                  <input type="text" id="password" placeholder="your password..." required><br><br>
+                  <input type="submit" value="Register">
+              </form>
+              <p>already have an account with us</p>
+              <input type="submit" value="login">
+          </aside>
+  </section>
+      <div class="container2">
+        <img src="./beautiful.jpeg">
+        <img src="./canteen.jpeg" alt="">
+        <img src="./curtain.jpg" alt="">
+        <img src="./dark hotel.jpg" alt="">
+        <img src="./vacation.webp" alt="">
+        <img src="./view.jpeg" alt="">
+      </div>
+
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2024 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>
